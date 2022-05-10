@@ -21,6 +21,13 @@ public class Contract {
 	public void setDescription(String description) {
 		Description = description;
 	}
+
+	public Contract(int uniqueID, String description) {
+		super();
+		this.uniqueID = uniqueID;
+		Description = description;
+	}
+	
 	
 	
 

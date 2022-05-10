@@ -24,6 +24,12 @@ public class Trade {
 	public void setSlaData(SLA slaData) {
 		this.slaData = slaData;
 	}
+	public Trade(int uniqueID, int valueInPounds, SLA slaData) {
+		super();
+		this.uniqueID = uniqueID;
+		this.valueInPounds = valueInPounds;
+		this.slaData = slaData;
+	}
 	
 	
 	

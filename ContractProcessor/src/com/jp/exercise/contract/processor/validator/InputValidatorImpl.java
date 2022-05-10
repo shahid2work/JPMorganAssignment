@@ -7,14 +7,20 @@ public class InputValidatorImpl implements InputValidator  {
 
 	@Override
 	public boolean validateContract(Contract contract) {
-		// TODO Auto-generated method stub
+		if(contract==null || contract.getDescription()==null) {
 		return false;
+		}
+		else return true;
 	}
 
 	@Override
 	public boolean validateTrade(Trade trade) {
-		// TODO Auto-generated method stub
-		return false;
+
+		if(trade==null || trade.getSlaData()==null ) {
+			return false;
+		}
+		
+		return true;
 	}
 
 }

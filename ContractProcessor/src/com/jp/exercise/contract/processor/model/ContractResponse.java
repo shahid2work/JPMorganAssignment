@@ -30,6 +30,11 @@ public class ContractResponse {
 	public void setContractTime(int contractTime) {
 		this.contractTime = contractTime;
 	}
+
+	@Override
+	public String toString() {
+		return "ContractResponse [trades=" + trades + ", contract=" + contract + ", contractTime=" + contractTime + "]";
+	}
 	
 	
 	

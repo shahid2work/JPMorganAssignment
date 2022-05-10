@@ -8,7 +8,15 @@ public class ProcessContractImpl implements ProcessContract{
 
 	@Override
 	public ContractResponse process(Trade trades, Contract contracts, int time) {
-		// TODO Auto-generated method stub
+		
+		ContractResponse reponseObject = new ContractResponse();
+		
+		if(trades.getUniqueID()==contracts.getUniqueID()) {
+			reponseObject.setContract(contracts);
+			reponseObject.setTrades(trades);
+			reponseObject.setTrades(trades);
+		}
+		
 		return null;
 	}
 
